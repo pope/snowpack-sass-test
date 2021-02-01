@@ -1,5 +1,6 @@
 import { expect } from 'chai';
-import {double} from './math';
+
+import { double } from './math';
 
 describe('math lib', () => {
 	it('doubles', () => {
