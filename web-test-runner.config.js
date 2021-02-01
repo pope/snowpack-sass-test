@@ -1,4 +1,7 @@
 const { puppeteerLauncher } = require('@web/test-runner-puppeteer');
+const {
+	visualRegressionPlugin,
+} = require('@web/test-runner-visual-regression/plugin');
 
 // NODE_ENV=test - Needed by "@snowpack/web-test-runner-plugin"
 process.env.NODE_ENV = 'test';
@@ -13,5 +16,8 @@ module.exports = {
 			},
 		}),
 	],
-	plugins: [require('@snowpack/web-test-runner-plugin')()],
+	plugins: [
+		require('@snowpack/web-test-runner-plugin')(),
+		visualRegressionPlugin(),
+	],
 };
