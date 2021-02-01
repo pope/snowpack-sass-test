@@ -1,0 +1,10 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: black;
+	color: rgba(255, 255, 255, 0.87);
+}
