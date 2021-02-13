@@ -13,6 +13,6 @@ describe('<App />', () => {
 		expect(container.textContent).to.equal('Yo');
 
 		// UNCOMMENT TO BLOW UP.
-		//await visualDiff(container, 'pages/App/renders');
+		// await visualDiff(container, 'pages/App/renders');
 	});
 });
